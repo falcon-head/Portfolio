@@ -6,14 +6,14 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = (prop) => {
   return (
-    <Card className="p-card-body">
-      <a href={prop.project.link} target="_blank" rel="noopener noreferrer">
-        <p className="p-top-tag">{prop.project.tool}</p>
-        <h2 className="p-tag-heading">{prop.project.name}</h2>
-        <p className="p-desc">{prop.project.desc}</p>
-        <div className="p-stars">
-          <FontAwesomeIcon className="p-star-icon" icon={faStar} />
-          <span className="p-star-number">{prop.project.stars}</span>
+    <Card className="card-body">
+      <a href={prop.project.link} className="card-link" target="_blank" rel="noopener noreferrer">
+        <p className="card-top-tag">{prop.project.tool}</p>
+        <h5 className="card-tag-heading">{prop.project.name}</h5>
+        <p className="card-desc">{prop.project.desc}</p>
+        <div className="card-stars">
+          <FontAwesomeIcon className="card-star-icon" icon={faStar} />
+          <span className="card-star-number">{prop.project.stars}</span>
         </div>
       </a>
     </Card>

@@ -86,12 +86,12 @@ class App extends Component {
       <Router>
         <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
           <div role="main" className="row h-100 row-top">
-            <div className="col-md-6 h-100">
+            <div className="col-md-5 h-100">
               <div className="affix">
                 <Info intro={this.state.Intro} social={this.state.social} />
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-7">
               <Detail project={this.state.project} skill={this.state.skill} />
             </div>
           </div>

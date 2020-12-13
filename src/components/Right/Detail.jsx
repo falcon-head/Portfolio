@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
 const Detail = (props) => {
-  console.log(props)
+  console.log(props);
   let renderComp;
   if (props.project != null) {
     renderComp = props.project.map((project) => (
@@ -16,10 +16,9 @@ const Detail = (props) => {
     <div>
       <div className="container">
         <div className="row">
-            <div className="col">
-                {renderComp}
-                {renderComp}
-            </div>
+          <div className="col">
+            <div className="project-card-holder">{renderComp}</div>
+          </div>
         </div>
       </div>
 

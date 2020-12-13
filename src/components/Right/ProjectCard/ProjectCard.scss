@@ -1,1 +1,63 @@
 @import "./../../../variables";
+
+.card-body {
+  background-color: #202022;
+  border: none;
+  padding: 2em;
+  margin-bottom: 0.5em;
+  transition: transform 0.2s;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-top-tag {
+  margin-bottom: 0;
+  color: white;
+  text-transform: uppercase;
+  font-style: bold;
+  font-size: 0.6em;
+  letter-spacing: 0.2rem;
+  font-family: $font-source-san;
+}
+
+.card-tag-heading {
+  font-weight: 700;
+  padding-top: 0.2em;
+  color: $font-heading;
+  margin: 0;
+}
+
+.card-desc {
+  color: $font-desc;
+  padding-top: 0.2em;
+  margin: 0;
+}
+
+.card-stars {
+  padding-top: 0.3em;
+  color: $font-desc;
+}
+
+.card-star-icon {
+  margin-right: 0.2em;
+  padding: 0.1em;
+}
+
+.card-star-number {
+  font-family: $font-source-san;
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+}
+
+.project-card-holder:hover .card-body {
+  opacity: 0.5;
+}
+
+.project-card-holder:hover .card-body:hover {
+  opacity: 1;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
