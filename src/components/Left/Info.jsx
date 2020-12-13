@@ -13,6 +13,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProfileImage from "./../../assets/avatar.png";
 
 const Info = (props) => {
+
+
   return (
     <div className="container h-100">
       <div className="row h-100">

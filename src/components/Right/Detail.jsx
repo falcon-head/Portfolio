@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
+import SkillCard from "./SkillCard/SkillCard"
+import "./Details.scss"
 
 const Detail = (props) => {
   console.log(props);
@@ -12,17 +14,30 @@ const Detail = (props) => {
     renderComp = <div> Loading </div>;
   }
 
+  let renderSkill;
+  console.log(props.skill)
+  if (props.skill != null) {
+    renderSkill = props.skill.map((skill) => (
+      <SkillCard key={skill.skill_name} skill={skill} />
+    ));
+  } else {
+    renderSkill = <div> Loading </div>;
+  }
+
   return (
-    <div>
+    <div className="detail" id="detail">
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="project-card-holder">{renderComp}</div>
+            <div id="project" className="project-card-holder">{renderComp}</div>
           </div>
         </div>
       </div>
-
-      <div></div>
+      <div className="container skill-top">
+        <div className="row gx-2 gy-2 s-body">
+            {renderSkill}
+        </div>
+      </div>
     </div>
   );
 };

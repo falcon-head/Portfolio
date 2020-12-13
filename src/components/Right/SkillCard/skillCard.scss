@@ -1,0 +1,48 @@
+@import "./../../../variables";
+
+.s-card-body {
+  height: 300px;
+  background-color: #202022;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.skill-a {
+  text-decoration: none;
+}
+
+.s-card-body {
+  padding: 2em;
+}
+
+.s-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+.s-heading {
+  margin-top: 0.7em;
+  color: white;
+}
+
+.s-desc {
+  color: $font-desc;
+}
+
+.badge {
+  background-color: #727273;
+  bottom: 0px;
+  color: white;
+  padding: 0.5em;
+}
+
+.s-body:hover .s-card-body {
+  opacity: 0.5;
+}
+
+.s-body:hover .s-card-body:hover {
+  opacity: 1;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
