@@ -4,7 +4,6 @@ import SkillCard from "./SkillCard/SkillCard"
 import "./Details.scss"
 
 const Detail = (props) => {
-  console.log(props);
   let renderComp;
   if (props.project != null) {
     renderComp = props.project.map((project) => (
@@ -15,7 +14,6 @@ const Detail = (props) => {
   }
 
   let renderSkill;
-  console.log(props.skill)
   if (props.skill != null) {
     renderSkill = props.skill.map((skill) => (
       <SkillCard key={skill.skill_name} skill={skill} />

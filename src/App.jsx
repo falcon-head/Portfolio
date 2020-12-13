@@ -1,10 +1,9 @@
 import "./App.scss";
 import React, { Component } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import axios from "./axios";
 import Info from "./components/Left/Info";
 import Detail from "./components/Right/Detail";
-
+import Loader from "./components/Loader/Loader";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -14,6 +13,7 @@ class App extends Component {
       social: null,
       project: null,
       skill: null,
+      loaded: false,
     };
   }
 
@@ -74,17 +74,21 @@ class App extends Component {
 
   componentDidMount() {
     this.getProjectData();
-    this.getHomeData();
     this.getContactData();
     this.getSkillData();
+    this.getHomeData();
   }
 
   /* Left and Right navigation holder */
   // Pass the respective props to the respective */
+  //TODO : Check loading with ArjunRaja Y
   render() {
+    console.log(this.state.loaded)
+    if(this.state.loaded === true) {
+      return <Loader/>
+    } else {
     return (
-      <Router>
-        <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
           <div role="main" className="row h-100 row-top">
             <div className="col-md-5 h-100">
               <div className="affix">
@@ -95,9 +99,9 @@ class App extends Component {
               <Detail project={this.state.project} skill={this.state.skill} />
             </div>
           </div>
-        </div>
-      </Router>
+      </div>
     );
+    }
   }
 }
 

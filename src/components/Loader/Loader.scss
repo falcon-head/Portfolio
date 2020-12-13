@@ -1,0 +1,14 @@
+@import './../../variables';
+
+.loader-holder {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-background;
+}
+
+.loader {
+    width: 30em;
+    height: 30em;
+}
