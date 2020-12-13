@@ -1,0 +1,49 @@
+@import "../../variables";
+
+.hero-heading {
+    color: $font-heading;
+    line-height: 1;
+    font-size: $hero-font-size;
+}
+
+.hero-desc {
+    color: $font-desc;
+    margin-top: 2em;
+}
+
+
+.nav-ul {
+    color: $font-desc;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-social {
+    bottom: 4em;
+}
+
+.social-avatar {
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    float: left;
+  }
+
+  .social-ul {
+    list-style-type: none;
+    margin-left: 2em;
+  }
+
+  .social-li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    float: left;
+  }
+
+  .social-a {
+    color: white;
+    font-size: 1.5rem;
+  }
