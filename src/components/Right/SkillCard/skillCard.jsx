@@ -12,7 +12,7 @@ const SkillCard = (prop) => {
               {/* <FontAwesomeIcon icon={prop.skill.logo} /> */}
               <i className={prop.skill.logo}></i>
             </div>
-            <h5 className="s-heading">{prop.skill.skill_name}</h5>
+            <h4 className="s-heading">{prop.skill.skill_name}</h4>
             <p className="s-desc">{prop.skill.desc}</p>
 
             <span className="badge badge-pill">Testing</span>

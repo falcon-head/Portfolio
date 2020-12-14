@@ -9,7 +9,7 @@ const Journey = () => {
               <ul className="timeline-ul">
                 <li className="timeline-li">
                   <div className="timeline-content">
-                    <h1 className="timeline-heading">Testing</h1>
+                    <h2 className="timeline-heading">Testing</h2>
                     <p className="timeline-desc">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Iure laboriosam voluptatum sapiente harum ad fuga tenetur
@@ -20,7 +20,7 @@ const Journey = () => {
                 </li>
                 <li className="timeline-li">
                   <div className="timeline-content">
-                    <h1 className="timeline-heading">Testing</h1>
+                    <h2 className="timeline-heading">Testing</h2>
                     <p className="timeline-desc">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Iure laboriosam voluptatum sapiente harum ad fuga tenetur

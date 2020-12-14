@@ -8,8 +8,6 @@
   transition: transform 0.2s;
 }
 
-
-
 .card-link {
   text-decoration: none;
 }
@@ -19,26 +17,26 @@
   color: white;
   text-transform: uppercase;
   font-style: bold;
-  font-size: 0.6em;
+  font-size: 0.8em;
   letter-spacing: 0.2rem;
   font-family: $font-source-san;
 }
 
 .card-tag-heading {
   font-weight: 700;
-  padding-top: 0.2em;
+  padding-top: 0.3em;
   color: $font-heading;
   margin: 0;
 }
 
 .card-desc {
   color: $font-desc;
-  padding-top: 0.2em;
+  padding-top: 0.5em;
   margin: 0;
 }
 
 .card-stars {
-  padding-top: 0.3em;
+  padding-top: 0.4em;
   color: $font-desc;
 }
 

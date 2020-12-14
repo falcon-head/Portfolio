@@ -4,19 +4,29 @@
     color: $font-heading;
     line-height: 1;
     font-size: $hero-font-size;
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-align: left;
 }
 
 .hero-desc {
     color: $font-desc;
-    margin-top: 2em;
+    margin-top: 3em;
+    text-align: left;
+    line-height: 1.8;
 }
-
 
 .nav-ul {
     color: $font-desc;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-top: 3em;
+    line-height: 2;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: $font-source-san;
+    letter-spacing: 2px;
 }
 
 .hero-social {

@@ -9,7 +9,7 @@ const ProjectCard = (prop) => {
     <Card className="card-body">
       <a href={prop.project.link} className="card-link" target="_blank" rel="noopener noreferrer">
         <p className="card-top-tag">{prop.project.tool}</p>
-        <h5 className="card-tag-heading">{prop.project.name}</h5>
+        <h3 className="card-tag-heading">{prop.project.name}</h3>
         <p className="card-desc">{prop.project.desc}</p>
         <div className="card-stars">
           <FontAwesomeIcon className="card-star-icon" icon={faStar} />
