@@ -95,7 +95,7 @@ class App extends Component {
                 <Info intro={this.state.Intro} social={this.state.social} />
               </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-7" style={{paddingBottom:"2rem"}}>
               <Detail project={this.state.project} skill={this.state.skill} />
             </div>
           </div>

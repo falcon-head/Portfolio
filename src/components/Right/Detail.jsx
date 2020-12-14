@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import SkillCard from "./SkillCard/SkillCard"
 import "./Details.scss"
+import Journey from "./Journey/Journey";
 
 const Detail = (props) => {
   let renderComp;
@@ -34,6 +35,13 @@ const Detail = (props) => {
       <div className="container skill-top">
         <div className="row gx-2 gy-2 s-body">
             {renderSkill}
+        </div>
+      </div>
+      <div className="container journey-top">
+        <div className="row">
+          <div className="col">
+            <Journey />
+          </div>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const SkillCard = (prop) => {
             <h5 className="s-heading">{prop.skill.skill_name}</h5>
             <p className="s-desc">{prop.skill.desc}</p>
 
-            <span class="badge badge-pill">Testing</span>
+            <span className="badge badge-pill">Testing</span>
           </Card>
         </a>
       </div>
