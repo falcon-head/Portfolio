@@ -5,8 +5,12 @@
   border: none;
   padding: 3em;
   margin-bottom: 0.5em;
+  position: relative;
 }
 
+.timeline {
+    position: relative;
+}
 .timeline-heading {
     color: white;
 }
@@ -20,12 +24,27 @@
     color: white;
 }
 
+.timeline-heading {
+    margin-top: 1em;
+}
+
+.timeline-subheading {
+    color: $font-desc;
+    margin-top: 0.2em;
+}
+
+.timeline-desc {
+    margin-top: 1em;
+    margin-bottom: 1.3em;
+    text-align: left;
+}
+
 .timeline::before {
     content: "";
     position: absolute;
     height: 100%;
     width: 2px;
-    background-color: white;
+    background-color: $font-desc;
 }
 
 .timeline ul {
@@ -37,15 +56,29 @@
     position: relative;
 }
 
+.timeline ul li:last-child {
+    margin-bottom: 0px;
+}
+
+
 .timeline ul li::after {
     content: "";
     position: absolute;
     height: 20px;
     width: 20px;
-    background-color: $font-desc;
+    border: 0.2em solid $badge-green;
     border-radius: 50%;
+    background-color: $card-color;
     outline-color: $card-color;
     outline: 1em solid  $card-color;
     top: 0;
     left: -2.5em;
+}
+
+.timeline-badge {
+    background-color: $badge-green;
+    bottom: 0px;
+    color: white;
+    padding: 0.5em;
+    font-size: 0.8rem;
 }
