@@ -25,19 +25,19 @@ const Detail = (props) => {
 
   return (
     <div className="detail" id="detail">
-      <div className="container">
+      <div id="project-section"className="container">
         <div className="row">
           <div className="col">
             <div id="project" className="project-card-holder">{renderComp}</div>
           </div>
         </div>
       </div>
-      <div className="container skill-top">
+      <div id="skill-section"className="container skill-top">
         <div className="row gx-2 gy-2 s-body">
             {renderSkill}
         </div>
       </div>
-      <div className="container journey-top">
+      <div id="resume-section" className="container journey-top">
         <div className="row">
           <div className="col">
             <Journey />

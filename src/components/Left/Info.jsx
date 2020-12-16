@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProfileImage from "./../../assets/avatar.png";
+import Scrollspy from 'react-scrollspy';
 
 const Info = (props) => {
 
@@ -30,9 +31,11 @@ const Info = (props) => {
       <div className="row">
         <div className="col">
           <ul className="nav-ul">
-            <li>01 Projects</li>
-            <li>02 Skills</li>
-            <li>03 Resumes</li>
+            <Scrollspy items={['project-section','skill-section','resume-section']} currentClassName="is-current">
+            <li><a href="#project-section">01 Projects</a></li>
+            <li><a href="#skill-section">02 Skills</a></li>
+            <li><a href="#resume-section">03 Resumes</a></li>
+            </Scrollspy>
           </ul>
         </div>
       </div>

@@ -18,6 +18,18 @@ const Journey = () => {
                 Error in officia explicabo dicta, quia expedita culpa autem
                 cupiditate iure sit iste!
               </p>
+              <div className="timeline-points">
+                <ul className="timeline-points-ul">
+                  <li className="timeline-points-li">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Culpa fuga laborum
+                  </li>
+                  <li className="timeline-points-li">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Culpa fuga laborum
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li className="timeline-li">

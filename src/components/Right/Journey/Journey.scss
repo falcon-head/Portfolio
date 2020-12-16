@@ -35,8 +35,17 @@
 
 .timeline-desc {
     margin-top: 1em;
-    margin-bottom: 1.3em;
+    margin-bottom: 0.5em;
     text-align: left;
+}
+
+.timeline-points {
+    margin-bottom: 1.5em;
+}
+
+.timeline-points ul{
+    color: $font-desc;
+    padding-left: 16px;
 }
 
 .timeline::before {
@@ -47,21 +56,22 @@
     background-color: $font-desc;
 }
 
-.timeline ul {
+
+.timeline .timeline-ul {
     list-style-type: none;
 }
 
-.timeline ul li {
+.timeline .timeline-ul .timeline-li {
     margin-bottom:0.5em;
     position: relative;
 }
 
-.timeline ul li:last-child {
+.timeline .timeline-ul .timeline-li:last-child {
     margin-bottom: 0px;
 }
 
 
-.timeline ul li::after {
+.timeline .timeline-ul .timeline-li::after {
     content: "";
     position: absolute;
     height: 20px;
