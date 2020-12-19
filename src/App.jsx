@@ -91,9 +91,7 @@ class App extends Component {
       <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
           <div role="main" className="row h-100 row-top">
             <div className="col-md-5 h-100">
-              <div className="affix">
-                <Info intro={this.state.Intro} social={this.state.social} />
-              </div>
+                <Info intro={this.state.Intro} social={this.state.social}/>
             </div>
             <div className="col-md-7" style={{paddingBottom:"2rem"}}>
               <Detail project={this.state.project} skill={this.state.skill} />

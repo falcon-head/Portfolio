@@ -1,59 +1,76 @@
 @import "../../variables";
 
 .hero-heading {
-    color: $font-heading;
-    line-height: 1;
-    font-size: $hero-font-size;
-    font-weight: 700;
-    font-size: 4.5rem;
-    text-align: left;
+  color: $font-heading;
+  line-height: 1;
+  font-size: $hero-font-size;
+  font-weight: 700;
+  font-size: 4.5rem;
+  text-align: left;
+}
+
+.info-a {
+  text-decoration: none;
+  color: $font-desc;
+  letter-spacing: 2px;
 }
 
 .hero-desc {
-    color: $font-desc;
-    margin-top: 3em;
-    text-align: left;
-    line-height: 1.8;
+  color: $font-desc;
+  margin-top: 3em;
+  text-align: left;
+  line-height: 1.8;
 }
 
 .nav-ul {
-    color: $font-desc;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 3em;
-    line-height: 2;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-family: $font-source-san;
-    letter-spacing: 2px;
+  color: $font-desc;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 3em;
+  line-height: 2;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: $font-source-san;
+  letter-spacing: 2px;
 }
 
 .hero-social {
-    bottom: 4em;
+  bottom: 4em;
 }
 
 .social-avatar {
-    border-radius: 50%;
-    height: 42px;
-    width: 42px;
-    float: left;
-  }
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  float: left;
+}
 
-  .social-ul {
-    list-style-type: none;
-    margin-left: 2em;
-  }
+.nav-ul li {
+  list-style-type: none;
+}
 
-  .social-li {
-    display: inline-block;
-    list-style: none;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    float: left;
-  }
+.nav-ul li a:hover {
+  color: white;
+}
 
-  .social-a {
-    color: white;
-    font-size: 1.5rem;
-  }
+.nav-ul {
+  padding: 0;
+}
+
+.social-ul {
+  margin-left: 2em;
+  list-style-type: none;
+}
+
+.social-li {
+  display: inline-block;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  float: left;
+}
+
+.social-a {
+  color: white;
+  font-size: 1.5rem;
+}

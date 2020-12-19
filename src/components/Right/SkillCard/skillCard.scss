@@ -1,7 +1,7 @@
 @import "./../../../variables";
 
 .s-card-body {
-  height: 300px;
+  height: 22em;
   background-color: #202022;
   border: none;
   transition: transform 0.2s;
@@ -16,24 +16,40 @@
 }
 
 .s-icon {
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
+  text-align: center;
 }
 
 .s-heading {
   margin-top: 0.7em;
   color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.ss-tag {
+  margin-top: 1em;
+  text-align: center;
 }
 
 .s-desc {
   color: $font-desc;
+  margin-top: 1.3em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.card-content-holder {
+  margin-top: 2em;
 }
 
 .badge-skill {
   background-color: #727273;
-  bottom: 0px;
+  bottom: 5em;
   color: white;
   padding: 0.5em;
+  font-size: 0.8rem;
 }
 
 .s-body:hover .s-card-body {
