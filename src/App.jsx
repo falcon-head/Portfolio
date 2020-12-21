@@ -4,6 +4,7 @@ import axios from "./axios";
 import Info from "./components/Left/Info";
 import Detail from "./components/Right/Detail";
 import Loader from "./components/Loader/Loader";
+import { faTruckMonster } from "@fortawesome/free-solid-svg-icons";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +14,7 @@ class App extends Component {
       social: null,
       project: null,
       skill: null,
-      loaded: false,
+      loaded: true,
     };
   }
 
@@ -26,6 +27,7 @@ class App extends Component {
       .then((res) => {
         const data = res.data;
         this.setState({ Intro: data.home[0] });
+        this.setState({loaded:false})
       })
       .catch((error) => {
         console.log(error);
@@ -90,8 +92,8 @@ class App extends Component {
     return (
       <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
           <div role="main" className="row h-100 row-top">
-            <div className="col-md-5 h-100">
-                <Info intro={this.state.Intro} social={this.state.social}/>
+            <div className="col-md-5 h-100" style={{position:"relative"}}>
+              <Info intro={this.state.Intro} social={this.state.social}/>
             </div>
             <div className="col-md-7" style={{paddingBottom:"2rem"}}>
               <Detail project={this.state.project} skill={this.state.skill} />

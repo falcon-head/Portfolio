@@ -15,12 +15,16 @@ import Scrollspy from "react-scrollspy";
 
 const Info = (props) => {
   return (
-    <div className="container">
-      <h1 className="hero-heading">
-        Hello, I'm <br />
-        {props.intro ? props.intro.heading : "Loading"}
-      </h1>
-      <p className="hero-desc">{props.intro ? props.intro.desc : "Loading"}</p>
+    <div className="container info-hol">
+      <div className="hero-holder">
+        <h1 className="hero-heading">
+          Hello, I'm <br />
+          {props.intro ? props.intro.heading : "Loading"}
+        </h1>
+        <p className="hero-desc">
+          {props.intro ? props.intro.desc : "Loading"}
+        </p>
+      </div>
       <ul className="nav-ul">
         <Scrollspy
           items={["project-section", "skill-section", "resume-section"]}
@@ -43,6 +47,7 @@ const Info = (props) => {
           </li>
         </Scrollspy>
       </ul>
+
       <div className="hero-social">
         <div className="content-holder">
           <img src={ProfileImage} alt="ProfilePic" className="social-avatar" />

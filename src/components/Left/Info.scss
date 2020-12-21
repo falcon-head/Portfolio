@@ -1,5 +1,6 @@
 @import "../../variables";
 
+
 .hero-heading {
   color: $font-heading;
   line-height: 1;
@@ -8,6 +9,7 @@
   font-size: 4.5rem;
   text-align: left;
 }
+
 
 .info-a {
   text-decoration: none;
@@ -26,7 +28,7 @@
   color: $font-desc;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   margin-top: 3em;
   line-height: 2;
   font-size: 0.9rem;
@@ -37,8 +39,12 @@
 
 .hero-social {
   bottom: 4em;
+  margin-top: 1em;
+  position: fixed;
 }
-
+.info-hol .nav-ul ul {
+  padding: 0;
+}
 .social-avatar {
   border-radius: 50%;
   height: 42px;
@@ -48,15 +54,18 @@
 
 .nav-ul li {
   list-style-type: none;
+  padding:0;
 }
 
 .nav-ul li a:hover {
   color: white;
 }
 
-.nav-ul {
-  padding: 0;
+.nav-ul li a:active {
+  color: white;
 }
+
+
 
 .social-ul {
   margin-left: 2em;
@@ -67,7 +76,6 @@
   display: inline-block;
   padding-left: 0.3em;
   padding-right: 0.3em;
-  float: left;
 }
 
 .social-a {
