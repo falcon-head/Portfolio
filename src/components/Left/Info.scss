@@ -1,5 +1,9 @@
 @import "../../variables";
 
+.info-hol {
+  height: 100%;
+  position: relative;
+}
 
 .hero-heading {
   color: $font-heading;
@@ -9,7 +13,6 @@
   font-size: 4.5rem;
   text-align: left;
 }
-
 
 .info-a {
   text-decoration: none;
@@ -38,10 +41,15 @@
 }
 
 .hero-social {
-  bottom: 4em;
-  margin-top: 1em;
-  position: fixed;
+  bottom: 4em !important;
+  position: absolute;
 }
+
+.hero-holder {
+  position: absolute;
+  margin-right: 3em;
+}
+
 .info-hol .nav-ul ul {
   padding: 0;
 }
@@ -64,8 +72,6 @@
 .nav-ul li a:active {
   color: white;
 }
-
-
 
 .social-ul {
   margin-left: 2em;

@@ -21,33 +21,34 @@ const Info = (props) => {
           Hello, I'm <br />
           {props.intro ? props.intro.heading : "Loading"}
         </h1>
-        <p className="hero-desc">
-          {props.intro ? props.intro.desc : "Loading"}
-        </p>
+        <div>
+          <p className="hero-desc">
+            {props.intro ? props.intro.desc : "Loading"}
+          </p>
+        </div>
+        <ul className="nav-ul">
+          <Scrollspy
+            items={["project-section", "skill-section", "resume-section"]}
+            currentClassName="is-current"
+          >
+            <li>
+              <a className="info-a" href="#project-section">
+                01 Projects
+              </a>
+            </li>
+            <li>
+              <a className="info-a" href="#skill-section">
+                02 Skills
+              </a>
+            </li>
+            <li>
+              <a className="info-a" href="#resume-section">
+                03 Resumes
+              </a>
+            </li>
+          </Scrollspy>
+        </ul>
       </div>
-      <ul className="nav-ul">
-        <Scrollspy
-          items={["project-section", "skill-section", "resume-section"]}
-          currentClassName="is-current"
-        >
-          <li>
-            <a className="info-a" href="#project-section">
-              01 Projects
-            </a>
-          </li>
-          <li>
-            <a className="info-a" href="#skill-section">
-              02 Skills
-            </a>
-          </li>
-          <li>
-            <a className="info-a" href="#resume-section">
-              03 Resumes
-            </a>
-          </li>
-        </Scrollspy>
-      </ul>
-
       <div className="hero-social">
         <div className="content-holder">
           <img src={ProfileImage} alt="ProfilePic" className="social-avatar" />
