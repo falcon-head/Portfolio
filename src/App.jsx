@@ -4,6 +4,7 @@ import axios from "./axios";
 import Info from "./components/Left/Info";
 import Detail from "./components/Right/Detail";
 import Loader from "./components/Loader/Loader";
+import ComingSoon from "./components/ComingSoon/Coming"
 class App extends Component {
   constructor(props) {
     super(props);
@@ -84,23 +85,25 @@ class App extends Component {
   // Pass the respective props to the respective */
   //TODO : Check loading with ArjunRaja Y
   render() {
-    console.log(this.state.loaded);
-    if (this.state.loaded === true) {
-      return <Loader />;
-    } else {
-      return (
-        <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
-          <div role="main" className="row h-100 row-top">
-            <div className="col-md-5 h-100 bio">
-              <Info intro={this.state.Intro} social={this.state.social} />
-            </div>
-            <div className="col-md-7" style={{ paddingBottom: "2rem" }}>
-              <Detail project={this.state.project} skill={this.state.skill} />
-            </div>
-          </div>
-        </div>
+    return(    <ComingSoon/>
       );
-    }
+    // console.log(this.state.loaded);
+    // if (this.state.loaded === true) {
+    //   return <Loader />;
+    // } else {
+    //   return (
+    //     <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    //       <div role="main" className="row h-100 row-top">
+    //         <div className="col-md-5 h-100 bio">
+    //           <Info intro={this.state.Intro} social={this.state.social} />
+    //         </div>
+    //         <div className="col-md-7" style={{ paddingBottom: "2rem" }}>
+    //           <Detail project={this.state.project} skill={this.state.skill} />
+    //         </div>
+    //       </div>
+    //     </div>
+    //   );
+    // }
   }
 }
 
