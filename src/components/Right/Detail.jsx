@@ -1,11 +1,14 @@
 import React from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
-import SkillCard from "./SkillCard/SkillCard"
+import SkillCard from "./SkillCard/skillCard"
 import "./Details.scss"
 import Journey from "./Journey/Journey";
 
 const Detail = (props) => {
   let renderComp;
+  let renderSkill;
+  let renderResume;
+  
   if (props.project != null) {
     renderComp = props.project.map((project) => (
       <ProjectCard key={project.name} project={project} />
@@ -14,13 +17,20 @@ const Detail = (props) => {
     renderComp = <div> Loading </div>;
   }
 
-  let renderSkill;
   if (props.skill != null) {
     renderSkill = props.skill.map((skill) => (
       <SkillCard key={skill.skill_name} skill={skill} />
     ));
   } else {
     renderSkill = <div> Loading </div>;
+  }
+
+  if (props.resume != null) {
+    renderResume = props.resume.map((resume) => (
+      <Journey key={resume._id} resume={resume} />
+    ));
+  } else {
+    renderResume = <div> Loading </div>;
   }
 
   return (
@@ -40,7 +50,7 @@ const Detail = (props) => {
       <div id="resume-section" className="container journey-top">
         <div className="row">
           <div className="col">
-            <Journey />
+            {renderResume}
           </div>
         </div>
       </div>

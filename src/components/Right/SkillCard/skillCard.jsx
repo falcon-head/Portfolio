@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillCard.scss";
+import "./skillCard.scss";
 import { Card } from "antd";
 
 const SkillCard = (prop) => {

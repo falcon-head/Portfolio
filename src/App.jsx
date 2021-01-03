@@ -15,6 +15,7 @@ class App extends Component {
       project: null,
       skill: null,
       loaded: true,
+      resume: null,
     };
   }
 
@@ -74,11 +75,27 @@ class App extends Component {
       });
   }
 
+  getResumeData() {
+    /* Get the resume data and assign it to the resume in the resume key/object */
+    axios
+      .get("resume")
+      .then((res) => {
+        const data = res.data;
+        this.setState({
+          resume: data.resume_data,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   componentDidMount() {
     this.getProjectData();
     this.getContactData();
     this.getSkillData();
     this.getHomeData();
+    this.getResumeData();
   }
 
   /* Left and Right navigation holder */
@@ -87,23 +104,22 @@ class App extends Component {
   render() {
     return(    <ComingSoon/>
       );
-    // console.log(this.state.loaded);
-    // if (this.state.loaded === true) {
-    //   return <Loader />;
-    // } else {
-    //   return (
-    //     <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
-    //       <div role="main" className="row h-100 row-top">
-    //         <div className="col-md-5 h-100 bio">
-    //           <Info intro={this.state.Intro} social={this.state.social} />
-    //         </div>
-    //         <div className="col-md-7" style={{ paddingBottom: "2rem" }}>
-    //           <Detail project={this.state.project} skill={this.state.skill} />
-    //         </div>
-    //       </div>
-    //     </div>
-    //   );
-    // }
+    
+   <!--     console.log(this.state.loaded);
+    if (this.state.loaded === true) {
+      return <Loader />;
+    } else {
+      return (
+        <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
+          <div role="main" className="row h-100 row-top">
+            <div className="col-md-5 h-100 bio">
+              <Info intro={this.state.Intro} social={this.state.social} />
+            </div>
+            <div className="col-md-7" style={{ paddingBottom: "2rem" }}>
+              <Detail project={this.state.project} skill={this.state.skill} resume={this.state.resume}/>
+            </div>
+          </div>
+        </div> -->
   }
 }
 
