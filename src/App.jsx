@@ -4,6 +4,7 @@ import axios from "./axios";
 import Info from "./components/Left/Info";
 import Detail from "./components/Right/Detail";
 import Loader from "./components/Loader/Loader";
+import ComingSoon from "./components/ComingSoon/Coming"
 class App extends Component {
   constructor(props) {
     super(props);
@@ -101,7 +102,10 @@ class App extends Component {
   // Pass the respective props to the respective */
   //TODO : Check loading with ArjunRaja Y
   render() {
-    console.log(this.state.loaded);
+    return(    <ComingSoon/>
+      );
+    
+   <!--     console.log(this.state.loaded);
     if (this.state.loaded === true) {
       return <Loader />;
     } else {
@@ -115,9 +119,7 @@ class App extends Component {
               <Detail project={this.state.project} skill={this.state.skill} resume={this.state.resume}/>
             </div>
           </div>
-        </div>
-      );
-    }
+        </div> -->
   }
 }
 
