@@ -5,7 +5,7 @@ const ComingSonn = () => {
     return (
             <div className="center-holder">
                 <div className="typewriter">
-                <h1>Coming soon! </h1>
+                <h1>Coming soon!</h1>
                 </div>
             </div>
 
